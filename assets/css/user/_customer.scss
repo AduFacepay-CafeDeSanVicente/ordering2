@@ -1,0 +1,26 @@
+.customer-container{
+	.status-active{
+		background: #28a745;
+	    color: white;
+	    padding: 5px 15px;
+	    border-radius: 50px;
+	    font-size: 10px;
+	}
+	.status-inactive{
+		background: #dc3545;
+	    color: white;
+	    padding: 5px 15px;
+	    border-radius: 50px;
+	    font-size: 10px;
+	}
+
+	.title{
+		font-size: 15px;
+	    font-weight: 600;
+	    color: #333;
+	    text-decoration: underline;
+	}
+	table{
+		text-align: center;
+	}
+}

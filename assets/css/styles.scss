@@ -1,0 +1,63 @@
+//FOR GLOBAL STYLESHEET
+@import "global/global";
+
+//FOR PRE LOADER
+@import "preloader/preloader";
+
+//FOR LAYOUTS RELATED
+@import "layouts/header";
+@import "layouts/footer";
+
+//FOR REGISTRATION RELATED
+@import "signup/signup";
+@import "signup/signup-v2";
+
+//FOR VERIFICATION RELATED
+@import "verification/verify_account";
+
+//FOR LOGIN RELATED
+@import "login/login";
+@import "login/forgot_password";
+@import "login/change_password";
+
+//FOR DASHBOARD RELATED
+@import "dashboard/dashboard";
+@import "dashboard/admin-dashboard";
+
+
+//FOR ORDER RELATED
+@import "order/my-orders";
+@import "order/order-payment";
+@import "order/order-payment-successful";
+@import "order/order-tracking-widget";
+@import "order/my-orders-view";
+@import "order/order-view";
+
+//FOR WALLET RELATED
+@import "wallet/my-wallet";
+@import "wallet/cash-in-view";
+@import "wallet/cash-in-successful";
+@import "wallet/cash-in-v2";
+@import "points/my-points";
+
+//FOR PRODUCT RELATED
+@import "product/product-view";
+@import "product/product";
+
+//FOR USER RELATED
+@import "user/customer-view";
+@import "user/employee";
+@import "user/customer";
+@import "user/change_password";
+@import "user/employee_add";
+
+//FOR HOME RELATED
+@import "home/home";
+@import "home/homev2";
+
+//FOR COMPANY RELATED
+@import "company/terms-and-condition";
+@import "company/about-us";
+
+//FOR DISCOUNTS RELATED
+@import "discount/discount";

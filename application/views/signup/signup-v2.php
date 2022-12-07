@@ -17,6 +17,16 @@
 			<div class="signup-v2-body">
 				<form id="form" enctype="multipart/form-data" autocomplete="off">
 					<p class="main-title">Sign up to <strong><?= APPNAME ?></strong></p>
+					<div class="face-container">
+			        	<div class="row">
+				            <div class="col-12 col-lg-12" style="text-align: center;">
+				            	<span>Face Recognition&nbsp;<span class="text-danger">*</span></span><br>
+				            	<small class="text-danger">Please remove your eyeglasses and face mask</small><br>
+				            	<img id="img_face" src="<?= base_url();?>assets/uploads/images/face-recognition-default.jpg"><br>
+				                <button type="button" class="btn btn-sm btn-primary btn-open-camera" style="width: 130px">Register Face</button>
+				            </div>
+			            </div>
+			        </div>
 					<div class="info-container">
 			            <div class="row">
 			                <div class="col-12 col-lg-6">
@@ -53,20 +63,16 @@
 				            </div>
 			            </div>
 			        </div>
-			        <div class="face-container">
-			        	<div class="row">
-				            <div class="col-12 col-lg-3">
-				            	<span>Face Recognition&nbsp;<span class="text-danger">*</span></span><br>
-				            	<img id="img_face" src="<?= base_url();?>assets/uploads/images/face-recognition-default.jpg"><br>
-				                <button type="button" class="btn btn-sm btn-primary btn-open-camera" style="width: 130px">Register Face</button>
-				            </div>
-			            </div>
-			        </div>
-			        <div class="btn-group pull-right">
-			        	<button class="btn btn-sm btn-primary btn-save-registration">Save</button>&nbsp;
+			        <br>
+			        <div class="btn-group">
+			        	<button class="btn btn-sm btn-primary btn-save-registration" disabled>Save</button>&nbsp;
 			        	<a class="btn btn-sm btn-primary" href="<?= base_url();?>login">Go to Login</a>
-			        </div>
+			        </div><br><br>
 				</form>
+				<div class="signup-terms-container">
+					<span>By using this website, you fully understand the <a class="btn-show-terms" style="cursor: pointer;">Terms and Condition.</a>You grant the permission and right to take photographs of you as a required part of the process.</span><br>
+		        	<span><input type="checkbox" class="i-agree-checkbox-signup" id="iAgreeCheckboxSignup">&nbsp;&nbsp;<label for="iAgreeCheckboxSignup">I agree to the terms and condition.</label></span>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -138,6 +144,48 @@
             </div>
         </div>
     </div>
+
+    <div class="modal fade" id="terms_for_signup_modal" tabindex="-1" role="dialog" aria-hidden="true">
+	    <div class="modal-dialog modal-dialog-centered" role="document">
+	        <div class="modal-content">
+	            <div class="modal-header">
+	                <h5 class="modal-title">Terms and Conditions</h5>
+	                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+	                <span aria-hidden="true">&times;</span>
+	                </button>
+	            </div>
+	            <div class="modal-body">
+	            	<p><b>Consent</b></p>
+	            	<p>Taking pictures is a requirement in registration to register the customer's face to be able to process facial recognition for identification and account verification when choosing Adu Facepay as the payment method.</p>
+
+	            	<p><b>Transparency</b></p>
+	            	<p>Facial recognition data that will be collected will be used for the purpose of the user's identification for its account and verification of payment.</p>
+					<p>Personal information and facial recognition data from the customers of the Cafe De San Vicente at Adamson University will be collected.</p>
+
+	            	<p><b>RETENTION OF DATA</b></p>
+	            	<p>The personal data of registered customers will be kept for the duration of studying in the university.</p>
+	            	<p><?= APPNAME ?> will retain your Personal Data only for as long as is necessary for the purposes set out in this Privacy Policy. We will retain and use your Personal Data to the extent necessary to comply with our legal obligations (for example, if we are required to retain your data to comply with applicable laws), resolve disputes and enforce our legal agreements and policies.</p>
+	                <p><?= APPNAME ?> will also retain Usage Data for internal analysis purposes. Usage Data is generally retained for a shorter period of time, except when this data is used to strengthen the security or to improve the functionality of our Service, or we are legally obligated to retain this data for more extended periods.
+	                </p>
+
+	                <p><b>Use of Data</b></p>
+					<ul>
+						<li>To provide and maintain our Services</li>
+						<li>To notify you about changes to our Services</li>
+						<li>To allow you to participate in interactive features of our Service when you choose to do so</li>
+						<li>To provide customer support</li>
+						<li>To gather analysis or valuable information so that we can improve our Services</li>
+						<li>To monitor the usage of our Services</li>
+						<li>To detect, prevent and address technical issues</li>
+						<li>To provide you with news, special offers, and general information about other goods, services, and events which we offer that are similar to those that you have already purchased or enquired about unless you have opted not to receive such information</li>
+					</ul>
+	            </div>
+	            <div class="modal-footer">
+	                <button class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Close</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
 </div>
 
 <script type="text/javascript" src="https://unpkg.com/webcam-easy/dist/webcam-easy.min.js"></script>
